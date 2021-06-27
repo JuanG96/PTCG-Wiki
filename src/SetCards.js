@@ -37,8 +37,9 @@ function SetCards(props) {
     return (
         <>
             <div>
-                <div>
-                    <h1>{cards[0].set.name}</h1>
+                <div className="set-name-div">
+                    <img src={cards[0].set.images.logo} alt="asd" className="set-name-img"/>
+                    <h1 className="set-name-cards">{cards[0].set.name}</h1>
                 </div>
 
             <div className="set-cards">

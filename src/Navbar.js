@@ -13,7 +13,7 @@ function Navbar() {
                             <li><a href="/#/decks">DECKS</a></li>
                             <li><a href="/#/search">SEARCH</a></li>
                             <li><a href="/#/about">ABOUT</a></li>
-                            <li><a href="/#/buy">BUY</a></li>
+                            {/* <li><a href="/#/buy">BUY</a></li> */}
                             <li><a href=""><FontAwesomeIcon icon={faLightbulb} /></a></li>
                         </ul>
                     </nav>

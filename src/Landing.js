@@ -81,7 +81,7 @@ function Landing() {
                         <h2>Let's get started!</h2>
                         <div className="button-div">
                             <Link to="/decks" >
-                                    <button className="landing-button">Build deck</button>
+                                    <button className="landing-button">Create deck</button>
                             </Link>
                             <Link to="/search" >
                                 <button className="landing-button">Search card</button>

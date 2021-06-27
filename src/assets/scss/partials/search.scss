@@ -1,0 +1,21 @@
+.search-div{
+    margin: 40px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(88, 88, 88);
+    padding:10px;
+    border-radius: 10px;
+
+}
+
+.search-input{
+    border-radius: 5px;
+    height: 40px;
+    width: 70%;
+    margin-right: 20px;
+}
+
+.search-button{
+    margin-right: 20px;
+}

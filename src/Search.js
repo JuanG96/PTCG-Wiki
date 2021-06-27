@@ -25,11 +25,13 @@ function Search() {
 
     return (
         <>
-            <form onSubmit={(e) => searchCard(e)}>
-                <input id="cardName" placeholder="Card name" />
-                <button className="landing-button">Search card</button>
-            </form>
+            <form onSubmit={(e) => searchCard(e)} className="search-div">
+                <input id="cardName" placeholder="Pokemon name" className="search-input"/>
+                <button className="landing-button search-button">Search card</button>
+                <button className="landing-button">Filters (in progress)</button>
 
+            </form>
+ 
             <div className="set-cards">
                 {cards.map(element =>
                     <a key={element.id} href={"/#/eachCard/" + element.id} className="each-card">
