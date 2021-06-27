@@ -1,0 +1,478 @@
+{
+  "decks": [
+    {
+      "id": 1,
+      "password": "hola",
+      "cards": [
+        {
+          "id": "swsh6-20",
+          "name": "Blaziken V",
+          "supertype": "Pokémon",
+          "subtypes": [
+            "Basic",
+            "V",
+            "Rapid Strike"
+          ],
+          "hp": "210",
+          "types": [
+            "Fire"
+          ],
+          "rules": [
+            "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+          ],
+          "attacks": [
+            {
+              "name": "High Jump Kick",
+              "cost": [
+                "Colorless",
+                "Colorless"
+              ],
+              "convertedEnergyCost": 2,
+              "damage": "50",
+              "text": ""
+            },
+            {
+              "name": "Fire Spin",
+              "cost": [
+                "Fire",
+                "Fire",
+                "Colorless",
+                "Colorless"
+              ],
+              "convertedEnergyCost": 4,
+              "damage": "210",
+              "text": "Discard 2 Energy from this Pokémon."
+            }
+          ],
+          "weaknesses": [
+            {
+              "type": "Water",
+              "value": "×2"
+            }
+          ],
+          "retreatCost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedRetreatCost": 2,
+          "set": {
+            "id": "swsh6",
+            "name": "Chilling Reign",
+            "series": "Sword & Shield",
+            "printedTotal": 198,
+            "total": 233,
+            "legalities": {
+              "unlimited": "Legal",
+              "standard": "Legal",
+              "expanded": "Legal"
+            },
+            "ptcgoCode": "CRE",
+            "releaseDate": "2021/06/18",
+            "updatedAt": "2021/06/19 20:00:00",
+            "images": {
+              "symbol": "https://images.pokemontcg.io/swsh6/symbol.png",
+              "logo": "https://images.pokemontcg.io/swsh6/logo.png"
+            }
+          },
+          "number": "20",
+          "artist": "Ayaka Yoshida",
+          "rarity": "Rare Holo V",
+          "nationalPokedexNumbers": [
+            257
+          ],
+          "legalities": {
+            "unlimited": "Legal",
+            "standard": "Legal",
+            "expanded": "Legal"
+          },
+          "images": {
+            "small": "https://images.pokemontcg.io/swsh6/20.png",
+            "large": "https://images.pokemontcg.io/swsh6/20_hires.png"
+          },
+          "tcgplayer": {
+            "url": "https://prices.pokemontcg.io/tcgplayer/swsh6-20",
+            "updatedAt": "2021/06/25",
+            "prices": {
+              "holofoil": {
+                "low": 1.99,
+                "mid": 3.06,
+                "high": 10,
+                "market": 2.75,
+                "directLow": null
+              }
+            }
+          }
+        },
+        {
+          "id": "swsh6-53",
+          "name": "Zeraora V",
+          "supertype": "Pokémon",
+          "subtypes": [
+            "Basic",
+            "V",
+            "Rapid Strike"
+          ],
+          "hp": "210",
+          "types": [
+            "Lightning"
+          ],
+          "rules": [
+            "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+          ],
+          "attacks": [
+            {
+              "name": "Cross Fist",
+              "cost": [
+                "Lightning",
+                "Colorless",
+                "Colorless"
+              ],
+              "convertedEnergyCost": 3,
+              "damage": "100",
+              "text": "If 1 of your other Rapid Strike Pokémon used an attack during your last turn, this attack also does 160 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+            }
+          ],
+          "weaknesses": [
+            {
+              "type": "Fighting",
+              "value": "×2"
+            }
+          ],
+          "retreatCost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedRetreatCost": 2,
+          "set": {
+            "id": "swsh6",
+            "name": "Chilling Reign",
+            "series": "Sword & Shield",
+            "printedTotal": 198,
+            "total": 233,
+            "legalities": {
+              "unlimited": "Legal",
+              "standard": "Legal",
+              "expanded": "Legal"
+            },
+            "ptcgoCode": "CRE",
+            "releaseDate": "2021/06/18",
+            "updatedAt": "2021/06/19 20:00:00",
+            "images": {
+              "symbol": "https://images.pokemontcg.io/swsh6/symbol.png",
+              "logo": "https://images.pokemontcg.io/swsh6/logo.png"
+            }
+          },
+          "number": "53",
+          "artist": "chibi",
+          "rarity": "Rare Holo V",
+          "nationalPokedexNumbers": [
+            807
+          ],
+          "legalities": {
+            "unlimited": "Legal",
+            "standard": "Legal",
+            "expanded": "Legal"
+          },
+          "images": {
+            "small": "https://images.pokemontcg.io/swsh6/53.png",
+            "large": "https://images.pokemontcg.io/swsh6/53_hires.png"
+          },
+          "tcgplayer": {
+            "url": "https://prices.pokemontcg.io/tcgplayer/swsh6-53",
+            "updatedAt": "2021/06/25",
+            "prices": {
+              "holofoil": {
+                "low": 1,
+                "mid": 4.9,
+                "high": 10.49,
+                "market": 3.95,
+                "directLow": null
+              }
+            }
+          }
+        },
+        {
+          "id": "swsh6-1",
+          "name": "Weedle",
+          "supertype": "Pokémon",
+          "subtypes": [
+            "Basic",
+            "Single Strike"
+          ],
+          "hp": "40",
+          "types": [
+            "Grass"
+          ],
+          "evolvesTo": [
+            "Kakuna"
+          ],
+          "attacks": [
+            {
+              "name": "Pierce",
+              "cost": [
+                "Grass"
+              ],
+              "convertedEnergyCost": 1,
+              "damage": "20",
+              "text": ""
+            }
+          ],
+          "weaknesses": [
+            {
+              "type": "Fire",
+              "value": "×2"
+            }
+          ],
+          "retreatCost": [
+            "Colorless"
+          ],
+          "convertedRetreatCost": 1,
+          "set": {
+            "id": "swsh6",
+            "name": "Chilling Reign",
+            "series": "Sword & Shield",
+            "printedTotal": 198,
+            "total": 233,
+            "legalities": {
+              "unlimited": "Legal",
+              "standard": "Legal",
+              "expanded": "Legal"
+            },
+            "ptcgoCode": "CRE",
+            "releaseDate": "2021/06/18",
+            "updatedAt": "2021/06/19 20:00:00",
+            "images": {
+              "symbol": "https://images.pokemontcg.io/swsh6/symbol.png",
+              "logo": "https://images.pokemontcg.io/swsh6/logo.png"
+            }
+          },
+          "number": "1",
+          "artist": "Sanosuke Sakuma",
+          "rarity": "Common",
+          "flavorText": "Its poison stinger is very powerful. Its bright-colored body is intended to warn off its enemies.",
+          "nationalPokedexNumbers": [
+            13
+          ],
+          "legalities": {
+            "unlimited": "Legal",
+            "standard": "Legal",
+            "expanded": "Legal"
+          },
+          "images": {
+            "small": "https://images.pokemontcg.io/swsh6/1.png",
+            "large": "https://images.pokemontcg.io/swsh6/1_hires.png"
+          },
+          "tcgplayer": {
+            "url": "https://prices.pokemontcg.io/tcgplayer/swsh6-1",
+            "updatedAt": "2021/06/25",
+            "prices": {
+              "normal": {
+                "low": 0.02,
+                "mid": 0.15,
+                "high": 10.83,
+                "market": 0.08,
+                "directLow": 0.08
+              },
+              "reverseHolofoil": {
+                "low": 0.05,
+                "mid": 0.3,
+                "high": 1,
+                "market": 0.17,
+                "directLow": 0.16
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "password": "hola",
+      "cards": []
+    },
+    {
+      "id": 3,
+      "password": "asdasd",
+      "cards": [
+        {
+          "id": "swsh6-173",
+          "name": "Galarian Zapdos V",
+          "supertype": "Pokémon",
+          "subtypes": [
+            "Basic",
+            "V"
+          ],
+          "hp": "200",
+          "types": [
+            "Fighting"
+          ],
+          "rules": [
+            "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+          ],
+          "abilities": [
+            {
+              "name": "Fighting Instinct",
+              "text": "This Pokémon's attacks cost Colorless less for each of your opponent's Pokémon V in play.",
+              "type": "Ability"
+            }
+          ],
+          "attacks": [
+            {
+              "name": "Thunderous Kick",
+              "cost": [
+                "Fighting",
+                "Colorless",
+                "Colorless",
+                "Colorless"
+              ],
+              "convertedEnergyCost": 4,
+              "damage": "170",
+              "text": "Before doing damage, discard a Special Energy from your opponent's Active Pokémon."
+            }
+          ],
+          "weaknesses": [
+            {
+              "type": "Psychic",
+              "value": "×2"
+            }
+          ],
+          "retreatCost": [
+            "Colorless"
+          ],
+          "convertedRetreatCost": 1,
+          "set": {
+            "id": "swsh6",
+            "name": "Chilling Reign",
+            "series": "Sword & Shield",
+            "printedTotal": 198,
+            "total": 233,
+            "legalities": {
+              "unlimited": "Legal",
+              "standard": "Legal",
+              "expanded": "Legal"
+            },
+            "ptcgoCode": "CRE",
+            "releaseDate": "2021/06/18",
+            "updatedAt": "2021/06/19 20:00:00",
+            "images": {
+              "symbol": "https://images.pokemontcg.io/swsh6/symbol.png",
+              "logo": "https://images.pokemontcg.io/swsh6/logo.png"
+            }
+          },
+          "number": "173",
+          "artist": "5ban Graphics",
+          "rarity": "Rare Holo V",
+          "nationalPokedexNumbers": [
+            145
+          ],
+          "legalities": {
+            "unlimited": "Legal",
+            "standard": "Legal",
+            "expanded": "Legal"
+          },
+          "images": {
+            "small": "https://images.pokemontcg.io/swsh6/173.png",
+            "large": "https://images.pokemontcg.io/swsh6/173_hires.png"
+          },
+          "tcgplayer": {
+            "url": "https://prices.pokemontcg.io/tcgplayer/swsh6-173",
+            "updatedAt": "2021/06/25",
+            "prices": {
+              "holofoil": {
+                "low": 18.76,
+                "mid": 19.99,
+                "high": 34.99,
+                "market": 18.8,
+                "directLow": null
+              }
+            }
+          }
+        },
+        {
+          "id": "det1-1",
+          "name": "Bulbasaur",
+          "supertype": "Pokémon",
+          "subtypes": [
+            "Basic"
+          ],
+          "hp": "60",
+          "types": [
+            "Grass"
+          ],
+          "evolvesTo": [
+            "Ivysaur"
+          ],
+          "attacks": [
+            {
+              "name": "Find a Friend",
+              "cost": [
+                "Grass"
+              ],
+              "convertedEnergyCost": 1,
+              "damage": "",
+              "text": "Search your deck for a Grass Pokémon, reveal it, and put it into your hand. Then, shuffle your deck."
+            }
+          ],
+          "weaknesses": [
+            {
+              "type": "Fire",
+              "value": "×2"
+            }
+          ],
+          "retreatCost": [
+            "Colorless"
+          ],
+          "convertedRetreatCost": 1,
+          "set": {
+            "id": "det1",
+            "name": "Detective Pikachu",
+            "series": "Sun & Moon",
+            "printedTotal": 18,
+            "total": 18,
+            "legalities": {
+              "unlimited": "Legal",
+              "standard": "Legal",
+              "expanded": "Legal"
+            },
+            "ptcgoCode": "DET",
+            "releaseDate": "2019/04/05",
+            "updatedAt": "2019/04/25 22:26:00",
+            "images": {
+              "symbol": "https://images.pokemontcg.io/det1/symbol.png",
+              "logo": "https://images.pokemontcg.io/det1/logo.png"
+            }
+          },
+          "number": "1",
+          "artist": "MPC Film",
+          "rarity": "Common",
+          "flavorText": "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokémon.",
+          "nationalPokedexNumbers": [
+            1
+          ],
+          "legalities": {
+            "unlimited": "Legal",
+            "standard": "Legal",
+            "expanded": "Legal"
+          },
+          "images": {
+            "small": "https://images.pokemontcg.io/det1/1.png",
+            "large": "https://images.pokemontcg.io/det1/1_hires.png"
+          },
+          "tcgplayer": {
+            "url": "https://prices.pokemontcg.io/tcgplayer/det1-1",
+            "updatedAt": "2021/06/25",
+            "prices": {
+              "holofoil": {
+                "low": 0.1,
+                "mid": 0.41,
+                "high": 4.99,
+                "market": 0.41,
+                "directLow": 0.45
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class*='col-'] {
+   margin: $margin;
+}
+
+//movil
+@for $i from 1 through $columns{
+    .col-#{$i}{
+        width: calc(#{($column-base-width * $i)} - #{($margin * 2)});
+    }
+}
+
+//movil grande
+@media(min-width: 737px)
+{
+    @for $i from 1 through $columns{
+    .col-md-#{$i}{
+        width: calc(#{($column-base-width * $i)} - #{($margin * 2)});
+    }
+}
+}
+
+// //tablet
+// @media(min-width: 768px)
+// {
+//     @for $i from 1 through $columns{
+//     .col-sm-#{$i}{
+//         width: calc(#{($column-base-width * $i)} - #{($margin * 2)});
+//     }
+// }
+// }
+//desktop grande
+@media(min-width: 981px)
+{
+    @for $i from 1 through $columns{
+    .col-lg-#{$i}{
+        width: calc(#{($column-base-width * $i)} - #{($margin * 2)});
+    }
+}   
+}
+
+//television
+@media(min-width: 1200px)
+{
+    @for $i from 1 through $columns{
+    .col-xl-#{$i}{
+        width: calc(#{($column-base-width * $i)} - #{($margin * 2)});
+    }
+}   
+}

@@ -1,0 +1,14 @@
+.set-cards{
+    margin: 100px 90px;
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.each-card{
+    margin: 10px;
+    transition: transform .4s
+}
+
+.each-card:hover{
+    transform: scale(1.1)
+}

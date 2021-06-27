@@ -1,11 +1,17 @@
-import logo from './logo.svg';
-import './assets/scss/App.scss';
-import React, { useEffect, useState } from 'react'
+// import './assets/scss/App.scss';
+import React, { useEffect } from 'react'
+import { Navbar } from './Navbar';
+import { Landing } from './Landing'
+import { HashRouter, Route, Link, Switch, NavLink} from 'react-router-dom';
+import { SetList } from './SetList';
+import { Decks } from './Decks';
+import { Search } from './Search';
+import { SetCards } from './SetCards';
+import { EachCard } from './EachCard';
+
 
 function App() {
   let API = "https://api.pokemontcg.io/v2/cards"
-
-  let [asd, setAsd ] = useState()
 
   useEffect(() => {
 
@@ -21,22 +27,21 @@ function App() {
   },[])
     
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar></Navbar>
+      <HashRouter>
+        <>
+          <Route exact path='/' component={Landing} />
+          <Route path='/sets' component={SetList} />
+          <Route path='/decks' component={Decks} />
+          <Route path='/search' component={Search} />
+          <Route path='/setCards/:id' component={SetCards} />
+          <Route path='/eachCard/:id' component={EachCard} />
+
+        </>
+      </HashRouter>
+    
+    </>
   );
 }
 

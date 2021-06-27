@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.landing-cards{
+    display: flex;
+}
+
+.landing-container{
+    margin: 80px 100px 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:300px
+}
+
+.landing-container h1{
+    font-size:100px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(223, 223, 223);
+}
+
+.landing-container h2{
+    color: rgb(223, 223, 223);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.landing-container p{
+    color: rgb(223, 223, 223);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.gif{
+    width: 100px;
+    height: 100px;
+}
+
+.loading-div h1{
+    color: rgb(223, 223, 223);
+    font-size: 50px;
+}
+
+.loading-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px
+}
+
+.landing-button{
+    height:50px;
+    width: 150px;
+    background-color:#55d6aa;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 2px 2px #444;
+    color: #444;
+}
+
+.landing-button:hover{
+    background-color:#49b994;
+}
+
+.button-div{
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,32 @@
+
+
+$columns: 12;
+$column-base-width: (100% / $columns);
+$margin: 10px;
+$maxwidth: 1336px;
+
+
+$bgColor:#E4E4E4;
+$fontColor:rgb(223, 223, 223);
+$logoBg:#FC4887;
+$borderButton:#1691C3;
+// $iconList: fa-arrow-circle-right,fa-question-circle;
+$fontsMap:(
+    'oleo': 'Oleo Script',
+    'open': 'Open Sans'
+);
+$fontSize:16px;
+
+%button{
+        border-radius: 10px;
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 10px;
+        font-weight: 800;
+        display: block;
+        text-decoration: none;
+}
+
+
+$navbarBackground: rgb(0, 0, 121);
+$navbarColor: white

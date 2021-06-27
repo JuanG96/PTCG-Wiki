@@ -1,0 +1,33 @@
+.decks-div{
+    margin: 30px 100px;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.new-deck{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.search-deck{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.forms-title{
+    margin-bottom: 10px; 
+    font-size: 24px;
+    color: rgb(223, 223, 223);
+}
+
+.deck-forms{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
