@@ -1,5 +1,7 @@
+@import './variables';
+
 .search-div{
-    margin: 40px 100px;
+    margin: 40px 100px 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,3 +21,35 @@
 .search-button{
     margin-right: 20px;
 }
+
+.filters-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:rgb(88, 88, 88);
+    margin: 0 100px;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.supertype-div, .subtype-div, .type-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.filters-div h2{
+    color: $fontColor;
+    margin-bottom: 10px;
+    font-size: 25px;  
+    text-decoration: underline;
+}
+
+.select-filter{
+    border-radius: 7px;
+    height: 30px;
+    background-color:rgb(224, 224, 224);
+}
+

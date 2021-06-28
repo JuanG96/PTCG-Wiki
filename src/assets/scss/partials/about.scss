@@ -1,0 +1,30 @@
+@import './variables';
+
+.about{
+    color: $fontColor;
+    margin-top: 50px;
+}
+
+.about h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.about h2{
+    font-size: 32px;
+    text-decoration: underline;
+    margin: 15px 0;
+}
+
+.about a{
+    text-decoration:none;
+    color: blue
+}
+
+.about p, .about li{
+    margin: 10px 0;
+}
+
+li{
+    list-style-type: circle;
+}

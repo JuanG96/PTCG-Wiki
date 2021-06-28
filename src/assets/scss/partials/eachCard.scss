@@ -1,3 +1,11 @@
+@import './variables';
+
+.individual-card-hr{
+    width: 100%;
+    background-color: $fontColor;
+    margin: 30px 0;
+}
+
 .individual-card-div{
     margin: 100px;
     display: flex;
@@ -10,15 +18,192 @@
 }
 
 .individual-card-info{
-    width:60%;
+    max-width: 50%;
     display: flex;
     flex-direction:column;
     justify-content: center;
+    align-items: flex-start;
+}
+
+.individual-card-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width:100%
+}
+
+.individual-card-hp{
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 
+.individual-card-hp p{
+    color: $fontColor;
+    font-size: 20px;
+    margin-right: 10px;
+}
 
 .individual-card-name h1{
-        color: rgb(223, 223, 223);
+    color: $fontColor;
+    font-size: 50px;
+}
 
+.type-img{
+    width:30px;
+    margin-right: 5px;
+}
+
+.individual-card-prices h1{
+    color: $fontColor;
+    font-size: 35px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.tcg-link{
+    text-decoration: none;
+    color: blue;
+    font-size:20px;
+    margin: 20px 0;
+}
+
+.individual-card-attacks h2{
+    color: $fontColor;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.individual-card-attacks{
+    width:100%
+}
+
+.individual-attack{
+    color: $fontColor;
+    width:100%;
+}
+
+.attack-name-div{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width:100%
+
+}
+
+.individual-attack h3{
+    font-size: 25px;
+}
+
+.attack-stats{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size:25px;
+    width:100%
+}
+
+.prices-div{
+    color: $fontColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+
+.prices-div div h2{
+    text-transform: uppercase;
+}
+
+.prices-div div{
+    width: 25%;
+}
+
+.prices-div p{
+    font-size: 20px;
+}
+
+.individual-card-form-div{
+    width:100%;
+}
+
+.individual-card-form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.individual-attack-global{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.attack-image-div{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    width:100%
+}
+
+.attack-description{
+    margin: 15px 0;
+}
+
+.market-price{
+    color:#824c95;
+}
+.low-price{
+    color:#48c774;
+}
+.mid-price{
+    color:#3298dc;
+}
+.high-price{
+    color:#f14668;
+}
+
+.trainer-each-rule{
+    color: $fontColor;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.sub-stats{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.weakness-div p, .resistance-div p{
+    font-size:25px;
+    color: $fontColor;
+}
+
+.type-value{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+.other-title{
+    font-size: 15px;
+    color: $fontColor;
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+
+.otherInfo-div{
+    font-size:25px;
+    color: $fontColor;
+}
+
+.other-stats{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 20px;
 }

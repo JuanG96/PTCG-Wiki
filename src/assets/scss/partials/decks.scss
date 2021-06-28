@@ -1,3 +1,5 @@
+@import './variables';
+
 .decks-div{
     margin: 30px 100px;
     display: flex;
@@ -20,7 +22,7 @@
 .forms-title{
     margin-bottom: 10px; 
     font-size: 24px;
-    color: rgb(223, 223, 223);
+    color: $fontColor;
 }
 
 .deck-forms{
@@ -31,14 +33,15 @@
 }
 
 .form-input{
-    margin-bottom: 10px;
     border-radius: 5px;
     height: 30px;
-
+}
+.form-input-margin{
+    margin-bottom: 10px;
 }
 
 .your-deck{
-    color: rgb(223, 223, 223);
+    color: $fontColor;
     font-size: 40px;
     text-align: center;
     margin-top: 40px;
@@ -51,5 +54,22 @@
 }
 
 .delete-button{
+    border-radius:10px;
+}
 
+.delete-button:hover{
+    background-color: rgb(168, 16, 16)
+}
+
+.modal-div{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.modal-title{
+    margin: 20px 0 ;
+    font-size:25px;
+    color: $fontColor;
 }

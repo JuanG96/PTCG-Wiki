@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Card } from "./Card";
 import { Carousel } from 'react-responsive-carousel';
-import { HashRouter, Route, Link, Switch, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Loading } from "./Loading";
 
 function Landing() {
@@ -37,7 +37,6 @@ function Landing() {
         })
         .then(response => response.json())
             .then(data => {
-                console.log(data);
                 let totalPage = Math.ceil(data.totalCount / 250);
                 localStorage.setItem('totalCount', totalPage)
 

@@ -192,41 +192,161 @@
           }
         },
         {
-          "id": "swsh6-1",
-          "name": "Weedle",
+          "id": "pop4-9",
+          "name": "Pokémon Fan Club",
+          "supertype": "Trainer",
+          "subtypes": [
+            "Supporter"
+          ],
+          "rules": [
+            "You can play only one Supporter card each turn. When you play this card, put it next to your Active Pokémon. When your turn ends, discard this card.",
+            "Search your deck for up to 2 Basic Pokémon and put them onto your Bench. Shuffle your deck afterward."
+          ],
+          "set": {
+            "id": "pop4",
+            "name": "POP Series 4",
+            "series": "POP",
+            "printedTotal": 17,
+            "total": 17,
+            "legalities": {
+              "unlimited": "Legal"
+            },
+            "releaseDate": "2006/08/01",
+            "updatedAt": "2020/08/14 09:35:00",
+            "images": {
+              "symbol": "https://images.pokemontcg.io/pop4/symbol.png",
+              "logo": "https://images.pokemontcg.io/pop4/logo.png"
+            }
+          },
+          "number": "9",
+          "artist": "Ken Sugimori",
+          "rarity": "Uncommon",
+          "legalities": {
+            "unlimited": "Legal"
+          },
+          "images": {
+            "small": "https://images.pokemontcg.io/pop4/9.png",
+            "large": "https://images.pokemontcg.io/pop4/9_hires.png"
+          },
+          "tcgplayer": {
+            "url": "https://prices.pokemontcg.io/tcgplayer/pop4-9",
+            "updatedAt": "2021/06/28",
+            "prices": {
+              "normal": {
+                "low": 9,
+                "mid": 9.58,
+                "high": 10.16,
+                "market": 10.16,
+                "directLow": null
+              }
+            }
+          }
+        },
+        {
+          "id": "pop4-9",
+          "name": "Pokémon Fan Club",
+          "supertype": "Trainer",
+          "subtypes": [
+            "Supporter"
+          ],
+          "rules": [
+            "You can play only one Supporter card each turn. When you play this card, put it next to your Active Pokémon. When your turn ends, discard this card.",
+            "Search your deck for up to 2 Basic Pokémon and put them onto your Bench. Shuffle your deck afterward."
+          ],
+          "set": {
+            "id": "pop4",
+            "name": "POP Series 4",
+            "series": "POP",
+            "printedTotal": 17,
+            "total": 17,
+            "legalities": {
+              "unlimited": "Legal"
+            },
+            "releaseDate": "2006/08/01",
+            "updatedAt": "2020/08/14 09:35:00",
+            "images": {
+              "symbol": "https://images.pokemontcg.io/pop4/symbol.png",
+              "logo": "https://images.pokemontcg.io/pop4/logo.png"
+            }
+          },
+          "number": "9",
+          "artist": "Ken Sugimori",
+          "rarity": "Uncommon",
+          "legalities": {
+            "unlimited": "Legal"
+          },
+          "images": {
+            "small": "https://images.pokemontcg.io/pop4/9.png",
+            "large": "https://images.pokemontcg.io/pop4/9_hires.png"
+          },
+          "tcgplayer": {
+            "url": "https://prices.pokemontcg.io/tcgplayer/pop4-9",
+            "updatedAt": "2021/06/28",
+            "prices": {
+              "normal": {
+                "low": 9,
+                "mid": 9.58,
+                "high": 10.16,
+                "market": 10.16,
+                "directLow": null
+              }
+            }
+          }
+        },
+        {
+          "id": "swsh6-74",
+          "name": "Shadow Rider Calyrex V",
           "supertype": "Pokémon",
           "subtypes": [
             "Basic",
-            "Single Strike"
+            "V"
           ],
-          "hp": "40",
+          "hp": "210",
           "types": [
-            "Grass"
+            "Psychic"
           ],
-          "evolvesTo": [
-            "Kakuna"
+          "rules": [
+            "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
           ],
           "attacks": [
             {
-              "name": "Pierce",
+              "name": "Shadow Mist",
               "cost": [
-                "Grass"
+                "Psychic"
               ],
               "convertedEnergyCost": 1,
-              "damage": "20",
-              "text": ""
+              "damage": "10",
+              "text": "During your opponent's next turn, they can't play any Special Energy or Stadium cards from their hand."
+            },
+            {
+              "name": "Astral Barrage",
+              "cost": [
+                "Colorless",
+                "Colorless",
+                "Colorless"
+              ],
+              "convertedEnergyCost": 3,
+              "damage": "",
+              "text": "Choose 2 of your opponent's Pokémon and put 5 damage counters on each of them."
             }
           ],
           "weaknesses": [
             {
-              "type": "Fire",
+              "type": "Darkness",
               "value": "×2"
             }
           ],
+          "resistances": [
+            {
+              "type": "Fighting",
+              "value": "-30"
+            }
+          ],
           "retreatCost": [
+            "Colorless",
             "Colorless"
           ],
-          "convertedRetreatCost": 1,
+          "convertedRetreatCost": 2,
           "set": {
             "id": "swsh6",
             "name": "Chilling Reign",
@@ -240,45 +360,34 @@
             },
             "ptcgoCode": "CRE",
             "releaseDate": "2021/06/18",
-            "updatedAt": "2021/06/19 20:00:00",
+            "updatedAt": "2021/06/18 12:12:00",
             "images": {
               "symbol": "https://images.pokemontcg.io/swsh6/symbol.png",
               "logo": "https://images.pokemontcg.io/swsh6/logo.png"
             }
           },
-          "number": "1",
-          "artist": "Sanosuke Sakuma",
-          "rarity": "Common",
-          "flavorText": "Its poison stinger is very powerful. Its bright-colored body is intended to warn off its enemies.",
-          "nationalPokedexNumbers": [
-            13
-          ],
+          "number": "74",
+          "artist": "D.A.G Inc.",
+          "rarity": "Rare Holo V",
           "legalities": {
             "unlimited": "Legal",
             "standard": "Legal",
             "expanded": "Legal"
           },
           "images": {
-            "small": "https://images.pokemontcg.io/swsh6/1.png",
-            "large": "https://images.pokemontcg.io/swsh6/1_hires.png"
+            "small": "https://images.pokemontcg.io/swsh6/74.png",
+            "large": "https://images.pokemontcg.io/swsh6/74_hires.png"
           },
           "tcgplayer": {
-            "url": "https://prices.pokemontcg.io/tcgplayer/swsh6-1",
-            "updatedAt": "2021/06/25",
+            "url": "https://prices.pokemontcg.io/tcgplayer/swsh6-74",
+            "updatedAt": "2021/06/28",
             "prices": {
-              "normal": {
-                "low": 0.02,
-                "mid": 0.15,
-                "high": 10.83,
-                "market": 0.08,
-                "directLow": 0.08
-              },
-              "reverseHolofoil": {
-                "low": 0.05,
-                "mid": 0.3,
-                "high": 1,
-                "market": 0.17,
-                "directLow": 0.16
+              "holofoil": {
+                "low": 6,
+                "mid": 10.39,
+                "high": 19.05,
+                "market": 9.25,
+                "directLow": null
               }
             }
           }
@@ -482,6 +591,11 @@
     {
       "id": "5",
       "password": "asd123",
+      "cards": []
+    },
+    {
+      "id": "6",
+      "password": "nuevo",
       "cards": []
     }
   ]

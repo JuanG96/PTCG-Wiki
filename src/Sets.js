@@ -28,9 +28,9 @@ function Sets() {
             <div className="setCards">
             {sets.map(element =>
                 <a key={element.id} href={"/#/setCards/" + element.id} className="set-cards-a">
-                    <div className="set-card">
+                    <div className="sets-cards">
                         <div className="div-img">
-                            <img className="" src={element.images.logo} alt={element.name} />
+                            <img className="set-image" src={element.images.logo} alt={element.name} />
                         </div>
                         <div className="set-name">
                             <img src={element.images.symbol} alt={element.name} />

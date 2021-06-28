@@ -1,0 +1,41 @@
+@import './variables';
+
+.footer{
+    background-color:#55d6aa;
+    width:100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    color: #444;
+}
+
+.footer p{
+    margin-top: 20px
+}
+
+.github-icon{
+    text-decoration: none;
+    color: #444;
+}
+
+.linkedin-icon{
+    text-decoration: none;
+    color: #444;
+}
+
+.icons{
+    margin-top: 20px;
+    width:200px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.footer p a{
+    text-decoration:none;
+    color: blue
+
+}

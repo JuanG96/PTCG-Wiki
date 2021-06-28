@@ -2,12 +2,14 @@
 import React, { useEffect } from 'react'
 import { Navbar } from './Navbar';
 import { Landing } from './Landing'
-import { HashRouter, Route, Link, Switch, NavLink} from 'react-router-dom';
+import { HashRouter, Route} from 'react-router-dom';
 import { SetList } from './SetList';
 import { Decks } from './Decks';
 import { Search } from './Search';
 import { SetCards } from './SetCards';
 import { EachCard } from './EachCard';
+import { Footer } from './Footer';
+import { About } from './About';
 
 
 function App() {
@@ -22,7 +24,7 @@ function App() {
       }
     })
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(data => {})
     .catch(err => console.log(err))
   },[])
     
@@ -37,9 +39,11 @@ function App() {
           <Route path='/search' component={Search} />
           <Route path='/setCards/:id' component={SetCards} />
           <Route path='/eachCard/:id' component={EachCard} />
+          <Route path='/about' component={About} />
 
         </>
       </HashRouter>
+      <Footer></Footer>
     
     </>
   );

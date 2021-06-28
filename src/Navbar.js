@@ -6,7 +6,7 @@ function Navbar() {
         <>
         <header>
                 <div className="container">
-                    <a href="/#" className="logo" >TCG Wiki</a>
+                    <a href="/#" className="logo" >Pokémon TCG Wiki</a>
                     <nav>
                         <ul>
                             <li><a href="/#/sets">SETS</a></li>
@@ -14,7 +14,7 @@ function Navbar() {
                             <li><a href="/#/search">SEARCH</a></li>
                             <li><a href="/#/about">ABOUT</a></li>
                             {/* <li><a href="/#/buy">BUY</a></li> */}
-                            <li><a href=""><FontAwesomeIcon icon={faLightbulb} /></a></li>
+                            {/* <li><a href=""><FontAwesomeIcon icon={faLightbulb} /></a></li> */}
                         </ul>
                     </nav>
                 </div>

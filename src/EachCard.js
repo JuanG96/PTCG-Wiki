@@ -1,118 +1,114 @@
 import { useEffect, useState } from "react";
-import { Type } from "./Type";
-import colorLess from './img/colorLess.png';
-import dark from './img/dark.png';
-import dragon from './img/dragon.png';
-import electric from './img/electric.png';
-import fairy from './img/fairy.png';
-import fight from './img/fight.png';
-import fire from './img/fire.png';
-import grass from './img/grass.png';
-import psychic from './img/psychic.png';
-import steel from './img/steel.png';
-import water from './img/water.png';
+import Colorless from "./img/Colorless.png"
+import Darkness from "./img/Darkness.png"
+import Dragon from "./img/Dragon.png"
+import Fairy from "./img/Fairy.png"
+import Fighting from "./img/Fighting.png"
+import Fire from "./img/Fire.png"
+import Grass from "./img/Grass.png"
+import Lightning from "./img/Lightning.png"
+import Metal from "./img/Metal.png"
+import Psychic from "./img/Psychic.png"
+import Water from "./img/Water.png"
+
+import Modal from 'react-modal';
+Modal.setAppElement('#root');
+
+const customStyles = {
+    content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
+        backgroundColor: 'rgb(88, 88, 88)',
+        border: '1px solid black',
+        boxShadow: '5px 5px rgb(56, 56, 56)'
+
+    },
+};
+
+
+
 
 function EachCard(props) {
 
+    const [modalIsOpen, setIsOpen] = useState(false);
+    const [modalText, setModalText] = useState("")
+
+    let openModal = () => {
+        setIsOpen(true);
+    }
+
+    let afterOpenModal = () => {
+        // references are now sync'd and can be accessed.
+    }
+
+    let closeModal = () => {
+        setIsOpen(false);
+        window.location.reload()
+    }
+
     const [card, setCard] = useState({
-        "id": "gym2-2",
-        "name": "Blaine's Charizard",
-        "supertype": "Pokémon",
-        "subtypes": [
-            "Stage 2"
-        ],
-        "level": "50",
-        "hp": "100",
-        "types": [
-            "Fire"
-        ],
-        "evolvesFrom": "Blaine's Charmeleon",
-        "attacks": [
-            {
-                "name": "Roaring Flames",
-                "cost": [
-                    "Fire"
-                ],
-                "convertedEnergyCost": 1,
-                "damage": "20+",
-                "text": "Discard all Fire Energy cards attached to Blaine's Charizard. If all Energy cards attached to Blaine's Charizard provide 2 Fire Energy, discard all of them. This attack does 20 damage plus 20 more damage for each Fire Energy discarded in this way."
-            },
-            {
-                "name": "Flame Jet",
-                "cost": [
-                    "Fire",
-                    "Fire"
-                ],
-                "convertedEnergyCost": 2,
-                "damage": "",
-                "text": "Flip a coin. If heads, choose 1 of your opponent's Pokémon. This attack does 40 damage to that Pokémon. Don't apply Weakness and Resistance for this attack. (Any other effects that would happen after applying Weakness and Resistance still happen.)"
-            }
-        ],
-        "weaknesses": [
-            {
-                "type": "Water",
-                "value": "×2"
-            }
-        ],
-        "resistances": [
-            {
-                "type": "Fighting",
-                "value": "-30"
-            }
-        ],
-        "retreatCost": [
-            "Colorless",
-            "Colorless",
-            "Colorless"
-        ],
-        "convertedRetreatCost": 3,
+        "id": "",
+        "name": "",
+        "supertype": "",
+        "subtypes": [],
+        "level": "",
+        "hp": "",
+        "types": [],
+        "evolvesFrom": "",
+        "attacks": [],
+        "weaknesses": [],
+        "resistances": [],
+        "retreatCost": [],
+        "convertedRetreatCost": 0,
         "set": {
-            "id": "gym2",
-            "name": "Gym Challenge",
-            "series": "Gym",
-            "printedTotal": 132,
-            "total": 132,
+            "id": "",
+            "name": "",
+            "series": "",
+            "printedTotal": 0,
+            "total": 1302,
             "legalities": {
-                "unlimited": "Legal"
+                "unlimited": ""
             },
-            "ptcgoCode": "G2",
-            "releaseDate": "2000/10/16",
-            "updatedAt": "2020/08/14 09:35:00",
+            "ptcgoCode": "",
+            "releaseDate": "",
+            "updatedAt": "",
             "images": {
-                "symbol": "https://images.pokemontcg.io/gym2/symbol.png",
-                "logo": "https://images.pokemontcg.io/gym2/logo.png"
+                "symbol": "",
+                "logo": ""
             }
         },
-        "number": "2",
-        "artist": "Ken Sugimori",
-        "rarity": "Rare Holo",
-        "nationalPokedexNumbers": [
-            6
-        ],
+        "number": "",
+        "artist": "",
+        "rarity": "",
+        "nationalPokedexNumbers": [],
         "legalities": {
-            "unlimited": "Legal"
+            "unlimited": ""
         },
         "images": {
-            "small": "https://images.pokemontcg.io/gym2/2.png",
-            "large": "https://images.pokemontcg.io/gym2/2_hires.png"
+            "small": "",
+            "large": ""
         },
         "tcgplayer": {
-            "url": "https://prices.pokemontcg.io/tcgplayer/gym2-2",
-            "updatedAt": "2021/06/25",
+            "url": "",
+            "updatedAt": "",
             "prices": {
                 "holofoil": {
-                    "low": 200.0,
-                    "mid": 289.99,
-                    "high": 450.0,
-                    "market": 321.35,
-                    "directLow": null
+                    "low": 0,
+                    "mid": 0,
+                    "high": 0,
+                    "market": 0,
+                    "directLow": 0
                 },
                 "1stEditionHolofoil": {
-                    "low": 600.0,
-                    "mid": 1028.51,
-                    "high": 1499.9,
-                    "market": 1363.57,
-                    "directLow": null
+                    "low": 0,
+                    "mid": 0,
+                    "high": 0,
+                    "market": 0,
+                    "directLow": 0
                 }
             }
         }
@@ -125,52 +121,8 @@ function EachCard(props) {
     let API = "https://api.pokemontcg.io/v2/cards/" + setId.id
 
     
-    // let setTypeImg = (type) => {
-    //     switch (type) {
-    //         case "Colorless":
-    //             setType(colorLess)
-    //             break;
-    //         case "Darkness":
-    //             setType(dark)
-    //             break;
-    //         case "Dragon":
-    //             setType(dragon)
-    //             break;
-    //         case "Fairy":
-    //             setType(fairy)
-    //             break;
-    //         case "Fighting":
-    //             setType(fight)
-    //             break;
-    //         case "Fire":
-    //             setType(fire)
-    //             break;
-    //         case "Grass":
-    //             setType(prevState => prevState = grass)
-    //             break;
-    //         case "Lightning":
-    //             setType(electric)
-    //             break;
-    //         case "Metal":
-    //             setType(steel)
-    //             break;
-    //         case "Psychic":
-    //             setType(psychic)
-    //             break;
-    //         case "Water":
-    //             setType(water)
-    //             break;
-    //         default:
-    //             console.log("error");
-    //             break;
-    //     }
-
-        
-    // }
-
 
     useEffect(() => {
-        // const searchCard = () => {
             fetch(API, {
                 method: 'GET',
                 headers: {
@@ -179,13 +131,70 @@ function EachCard(props) {
             })
                 .then(response => response.json())
                 .then(data => {
-                    setCard(data.data)
-                    console.log(data.data.tcgplayer.prices);
-                    console.log(card);
-
+                    if (data.data.supertype === "Pokémon") {
+                        setCard(data.data)
+                    } else if (data.data.supertype === "Trainer" || data.data.supertype === "Energy") {
+                        setCard({
+                            "id": "",
+                            "name": "",
+                            "supertype": "",
+                            "subtypes": [],
+                            "rules": [],
+                            "set": {
+                                "id": "",
+                                "name": "",
+                                "series": "",
+                                "printedTotal": 0,
+                                "total": 0,
+                                "legalities": {
+                                    "unlimited": "",
+                                    "standard": "",
+                                    "expanded": ""
+                                },
+                                "ptcgoCode": "",
+                                "releaseDate": "",
+                                "updatedAt": "",
+                                "images": {
+                                    "symbol": "",
+                                    "logo": ""
+                                }
+                            },
+                            "number": "",
+                            "artist": "",
+                            "rarity": "",
+                            "legalities": {
+                                "unlimited": "",
+                                "standard": "",
+                                "expanded": ""
+                            },
+                            "images": {
+                                "small": "",
+                                "large": ""
+                            },
+                            "tcgplayer": {
+                                "url": "",
+                                "updatedAt": "",
+                                "prices": {
+                                    "normal": {
+                                        "low": 0,
+                                        "mid": 0,
+                                        "high": 0,
+                                        "market": 0,
+                                        "directLow": 0
+                                    },
+                                    "reverseHolofoil": {
+                                        "low": 0,
+                                        "mid": 0,
+                                        "high": 0,
+                                        "market": 0,
+                                        "directLow": 0
+                                    }
+                                }
+                            }
+                        })
+                        setCard(data.data)
+                    }
                 })
-        // }
-        // searchCard()
     }, [])
 
 
@@ -214,17 +223,19 @@ function EachCard(props) {
                         })
                         .then(response => response.json())
                         .then(data => {
-                            console.log(data);
-                            alert("Card added succesfully to your deck")
+                            setModalText("Card added succesfully to your deck")
+                            openModal()
                         })
                         .catch(error => {
                             console.log(error);
                         });
-                    } else (
-                        alert("Maximum number of cards")
-                    )
+                    } else {
+                        setModalText("Maximum number of cards")
+                        openModal()
+                    }
                 } else {
-                    alert("Incorrect Id or password")
+                    setModalText("Incorrect Id or password")
+                    openModal()
                 }
             })    
             .catch(error => {
@@ -232,8 +243,195 @@ function EachCard(props) {
             });    
     
     }
+
+    let Types = (value) => {
+        switch (value) {
+            case "Colorless":
+                return Colorless;
+            case "Darkness":
+                return Darkness;
+            case "Dragon":
+                return Dragon;
+            case "Fairy":
+                return Fairy;
+            case "Fighting":
+                return Fighting;
+            case "Fire":
+                return Fire;
+            case "Grass":
+                return Grass;
+            case "Lightning":
+                return Lightning;
+            case "Metal":
+                return Metal;
+            case "Psychic":
+                return Psychic;
+            case "Water":
+                return Water;
+            default:
+                console.log("hola");
+                break;
+        }
+    }
+    
+    let hp = () => {
+        if (card.supertype === "Pokémon") {
+            return (
+                <>
+                    <div className="individual-card-hp">
+                        <p>HP {card.hp}</p>
+                        <img src={Types(card.types[0])} alt="Type" className="type-img" />
+                    </div>
+                </>
+            )
+        } else if (card.supertype === "Trainer" || card.supertype === "Energy") {
+            return (
+                <>
+                </>
+            )
+        }
+    }
+
+    let showWeakness = () => {
+        if (card.weaknesses.length !== undefined) {
+            return (
+                <>
+                    <div className="weakness-div">
+                        <h3 className="other-title">Weakness</h3>
+                        <div className="type-value">
+                            <img src={Types(card.weaknesses[0].type)} alt="Type" className="type-img" />
+                            <p>{card.weaknesses[0].value}</p>
+                        </div>
+                    </div>
+                </>
+            )
+        }
+    }
+
+    let showResistance = () => {
+        if (card.resistances !== undefined) {
+            return (
+                <>
+                    <div className="resistance-div">
+                        <h3 className="other-title">Resistances</h3>
+                        <div className="type-value">
+                            <img src={Types(card.resistances[0].type)} alt="Type" className="type-img" />
+                            <p>{card.resistances[0].value}</p>
+                        </div>
+
+                    </div>
+                </>
+            )
+        }
+    }
+
+    let showRetreat = () => {
+        if (card.retreatCost.length !== undefined) {
+            return (
+                <>
+                    <div className="retreat-div">
+                        <h3 className="other-title">Retreat cost</h3>
+                        <div className="type-value">
+                        {card.retreatCost.map((element, index) =>
+                            <img src={Types(element)} key={index} alt="Type" className="type-img" />
+                            )}
+                        </div>
+
+                    </div>
+                </>
+            )
+        }
+    }
+
+
+
+
+
+
+    let attack = () => {
+        if (card.supertype === "Pokémon") {
+            return (
+                <>
+                    <div className="individual-card-attacks">
+
+                        <h2>Attacks</h2>
+                        {card.attacks.map((element, index) =>
+
+                            <div key={index} className="individual-attack">
+                                <div className="individual-attack-global">
+                                    <div className="attack-name-div">
+                                        <div className="attack-image-div">
+
+                                            {element.cost.map((cost, costIndex) =>
+                                                <img src={Types(cost)} key={costIndex} alt="Type" className="type-img" />
+                                            )}
+                                            <h3>{element.name}</h3>
+                                        </div>
+                                        <div className="attack-stats">
+                                            <h4>{element.damage}</h4>
+                                        </div>
+                                    </div>
+                                    <div className="attack-description">
+                                        <p>{element.text}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
+                        
+                        <div className="sub-stats">
+                            {showWeakness()}
+                            {showResistance()}
+                            {showRetreat()}
+                        </div>
+                        <div className="other-stats">
+                            <div className="otherInfo-div">
+                                <h3 className="other-title">Artist</h3>
+                                <p>{card.artist}</p>
+                            </div>
+                            <div className="otherInfo-div">
+                                <h3 className="other-title">Rarity</h3>
+                                <p>{card.rarity}</p>
+                            </div>
+                            <div className="otherInfo-div">
+                                <h3 className="other-title">Number</h3>
+                                <p>{card.number}/{card.set.printedTotal}</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </>
+            )
+        } else if (card.supertype === "Trainer" || card.supertype === "Energy") {
+            console.log(card);
+            return (
+                <>
+                    <div className="trainer-rules">
+                        {card.rules.map((element, index) =>
+                        <p key={index} className="trainer-each-rule">{element}</p>
+                        )}
+                    </div>
+                </>
+            )
+        }
+    }
+
+
         return (
             <>
+                <Modal
+                    isOpen={modalIsOpen}
+                    onAfterOpen={afterOpenModal}
+                    onRequestClose={closeModal}
+                    style={customStyles}
+                    contentLabel="Example Modal"
+                >
+                    <div className="modal-div">
+                        <h1 className="modal-title">{modalText}</h1>
+                        <button className="landing-button" onClick={closeModal}>Close</button>
+                    </div>
+                </Modal>
+
                 <div className="individual-card-div">
                     <div className="individual-card-img">
                         <img className="" src={card.images.large} alt={card.name} />
@@ -242,59 +440,44 @@ function EachCard(props) {
                         <div className="individual-card-name">
                             <h1>{card.name}</h1>
                         </div>
+                        {hp()}
+                        <hr className="individual-card-hr"/>
                         <div className="individual-card-prices">
                             <h1>Prices</h1>
-                            <a href={card.tcgplayer.url}>Buy from TCGplayer</a>
-                            {/* <div>
-                                <div>
-                                    <h2>NORMAL MARKET</h2>
-                                    <p>{card.tcgplayer.prices[0].market}</p>
-                                </div>
-                                <div>
-                                    <h2>NORMAL LOW</h2>
-                                    <p>{card.tcgplayer.prices[0].low}</p>
-                                </div>
-                                <div>
-                                    <h2>NORMAL MID</h2>
-                                    <p>{card.tcgplayer.prices[0].mid}</p>
-                                </div>
-                                <div>
-                                    <h2>NORMAL HIGH</h2>
-                                    <p>{card.tcgplayer.prices[0].high}</p>
-                                </div>
-
-                                <div>
-                                    <h2>REVERSE HOLOFOIL MARKET</h2>
-                                    <p>{card.tcgplayer.prices[1].market}</p>
-                                </div>
-                                <div>
-                                    <h2>REVERSE HOLOFOIL LOW</h2>
-                                    <p>{card.tcgplayer.prices[1].low}</p>
-                                </div>
-                                <div>
-                                    <h2>REVERSE HOLOFOIL MID</h2>
-                                    <p>{card.tcgplayer.prices[1].mid}</p>
-                                </div>
-                                <div>
-                                    <h2>REVERSE HOLOFOIL HIGH</h2>
-                                    <p>{card.tcgplayer.prices[1].high}</p>
-                                </div>
-                            </div> */}
-                        </div>
-                        <div className="individual-card-attacks">
-                            <h2>Attacks</h2>
-                            {card.attacks.map((element, index) => 
-                                <div key={index}>
-                                    <h3>{element.name}</h3>
-                                    <h4>{element.damage}</h4>
-                                </div>
+                            <a href={card.tcgplayer.url} className="tcg-link">Buy from TCGplayer</a>
+                            {Object.values(card.tcgplayer.prices).map((valueElement, index) => 
+                                    <div key={index} className="prices-div">
+                                        <div>
+                                            <h2>{Object.keys(card.tcgplayer.prices)[index]} MARKET</h2>
+                                            <p className="market-price">${valueElement.market}</p>
+                                        </div>
+                                        <div>
+                                            <h2>{Object.keys(card.tcgplayer.prices)[index]} LOW</h2>
+                                            <p className="low-price">${valueElement.low}</p>
+                                        </div>
+                                        <div>
+                                            <h2>{Object.keys(card.tcgplayer.prices)[index]} MID</h2>
+                                            <p className="mid-price">${valueElement.mid}</p>
+                                        </div>
+                                        <div>
+                                            <h2>{Object.keys(card.tcgplayer.prices)[index]} HIGH</h2>
+                                            <p className="high-price">${valueElement.high}</p>
+                                        </div>
+                                    </div>                            
                             )}
                         </div>
-                        <div>
-                            <form onSubmit={(e) => addCard(e)}>
-                                <input id="deckId" placeholder="Deck ID"/>
-                                <input id="deckPass" placeholder="Deck Password" type="password"/>
-                                <button>Add card</button>
+                        <hr className="individual-card-hr" />
+
+
+                        {attack()}
+
+                        <hr className="individual-card-hr" />
+                        <div className="individual-card-form-div">
+
+                            <form onSubmit={(e) => addCard(e)} className="individual-card-form">
+                                <input id="deckId" placeholder="Deck ID" className="form-input"/>
+                                <input id="deckPass" placeholder="Deck Password" type="password" className="form-input"/>
+                                <button className="landing-button">Add card</button>
                             </form>
                         </div>
                     </div>

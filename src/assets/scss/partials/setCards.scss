@@ -1,3 +1,5 @@
+@import './variables';
+
 .set-cards{
     margin: 50px 90px;
     display: flex;
@@ -14,7 +16,7 @@
 }
 
 .set-name-cards{
-    color: rgb(223, 223, 223);
+    color: $fontColor;
     font-size: 50px;
     font-family: 'Roboto', sans-serif;
 
