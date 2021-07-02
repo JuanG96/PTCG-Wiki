@@ -243,57 +243,6 @@
           }
         },
         {
-          "id": "pop4-9",
-          "name": "Pokémon Fan Club",
-          "supertype": "Trainer",
-          "subtypes": [
-            "Supporter"
-          ],
-          "rules": [
-            "You can play only one Supporter card each turn. When you play this card, put it next to your Active Pokémon. When your turn ends, discard this card.",
-            "Search your deck for up to 2 Basic Pokémon and put them onto your Bench. Shuffle your deck afterward."
-          ],
-          "set": {
-            "id": "pop4",
-            "name": "POP Series 4",
-            "series": "POP",
-            "printedTotal": 17,
-            "total": 17,
-            "legalities": {
-              "unlimited": "Legal"
-            },
-            "releaseDate": "2006/08/01",
-            "updatedAt": "2020/08/14 09:35:00",
-            "images": {
-              "symbol": "https://images.pokemontcg.io/pop4/symbol.png",
-              "logo": "https://images.pokemontcg.io/pop4/logo.png"
-            }
-          },
-          "number": "9",
-          "artist": "Ken Sugimori",
-          "rarity": "Uncommon",
-          "legalities": {
-            "unlimited": "Legal"
-          },
-          "images": {
-            "small": "https://images.pokemontcg.io/pop4/9.png",
-            "large": "https://images.pokemontcg.io/pop4/9_hires.png"
-          },
-          "tcgplayer": {
-            "url": "https://prices.pokemontcg.io/tcgplayer/pop4-9",
-            "updatedAt": "2021/06/28",
-            "prices": {
-              "normal": {
-                "low": 9,
-                "mid": 9.58,
-                "high": 10.16,
-                "market": 10.16,
-                "directLow": null
-              }
-            }
-          }
-        },
-        {
           "id": "swsh6-74",
           "name": "Shadow Rider Calyrex V",
           "supertype": "Pokémon",
@@ -387,6 +336,105 @@
                 "mid": 10.39,
                 "high": 19.05,
                 "market": 9.25,
+                "directLow": null
+              }
+            }
+          }
+        },
+        {
+          "id": "swsh6-3",
+          "name": "Beedrill",
+          "supertype": "Pokémon",
+          "subtypes": [
+            "Stage 2",
+            "Single Strike"
+          ],
+          "hp": "130",
+          "types": [
+            "Grass"
+          ],
+          "evolvesFrom": "Kakuna",
+          "attacks": [
+            {
+              "name": "Persist Sting",
+              "cost": [
+                "Grass"
+              ],
+              "convertedEnergyCost": 1,
+              "damage": "",
+              "text": "If your opponent's Active Pokémon has any Special Energy attached, it is Knocked Out."
+            },
+            {
+              "name": "Jet Spear",
+              "cost": [
+                "Grass"
+              ],
+              "convertedEnergyCost": 1,
+              "damage": "110",
+              "text": "Discard an Energy from this Pokémon."
+            }
+          ],
+          "weaknesses": [
+            {
+              "type": "Fire",
+              "value": "×2"
+            }
+          ],
+          "retreatCost": [
+            "Colorless"
+          ],
+          "convertedRetreatCost": 1,
+          "set": {
+            "id": "swsh6",
+            "name": "Chilling Reign",
+            "series": "Sword & Shield",
+            "printedTotal": 198,
+            "total": 233,
+            "legalities": {
+              "unlimited": "Legal",
+              "standard": "Legal",
+              "expanded": "Legal"
+            },
+            "ptcgoCode": "CRE",
+            "releaseDate": "2021/06/18",
+            "updatedAt": "2021/06/18 12:12:00",
+            "images": {
+              "symbol": "https://images.pokemontcg.io/swsh6/symbol.png",
+              "logo": "https://images.pokemontcg.io/swsh6/logo.png"
+            }
+          },
+          "number": "3",
+          "artist": "Misa Tsutsui",
+          "rarity": "Rare Holo",
+          "flavorText": "May appear in a swarm. Flies at violent speeds, all the while stabbing with the toxic stinger on its rear.",
+          "nationalPokedexNumbers": [
+            15
+          ],
+          "legalities": {
+            "unlimited": "Legal",
+            "standard": "Legal",
+            "expanded": "Legal"
+          },
+          "images": {
+            "small": "https://images.pokemontcg.io/swsh6/3.png",
+            "large": "https://images.pokemontcg.io/swsh6/3_hires.png"
+          },
+          "tcgplayer": {
+            "url": "https://prices.pokemontcg.io/tcgplayer/swsh6-3",
+            "updatedAt": "2021/06/28",
+            "prices": {
+              "holofoil": {
+                "low": 0.2,
+                "mid": 0.53,
+                "high": 2,
+                "market": 0.41,
+                "directLow": null
+              },
+              "reverseHolofoil": {
+                "low": 0.15,
+                "mid": 0.58,
+                "high": 10.98,
+                "market": 0.5,
                 "directLow": null
               }
             }

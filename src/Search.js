@@ -108,6 +108,7 @@ function Search() {
 
     }
 
+    // Shows the div with all the filters
     let showFilters = () => {
         if (filters) {
             return (

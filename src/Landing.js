@@ -12,8 +12,6 @@ function Landing() {
 
 
     let API = "https://api.pokemontcg.io/v2/cards"
-    // let randomCards = []
-    // let page = 1
 
     const generateCards = () => {
         // Arrays with random card numbers(0-250)
@@ -69,8 +67,6 @@ function Landing() {
     }, [])
 
     if (carouselCards3.length !== 0) {
-        
-    
         return (
             <>
                 <div>

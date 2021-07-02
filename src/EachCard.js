@@ -244,7 +244,8 @@ function EachCard(props) {
     
     }
 
-    let Types = (value) => {
+
+    let types = (value) => {
         switch (value) {
             case "Colorless":
                 return Colorless;
@@ -280,7 +281,7 @@ function EachCard(props) {
                 <>
                     <div className="individual-card-hp">
                         <p>HP {card.hp}</p>
-                        <img src={Types(card.types[0])} alt="Type" className="type-img" />
+                        <img src={types(card.types[0])} alt="Type" className="type-img" />
                     </div>
                 </>
             )
@@ -299,7 +300,7 @@ function EachCard(props) {
                     <div className="weakness-div">
                         <h3 className="other-title">Weakness</h3>
                         <div className="type-value">
-                            <img src={Types(card.weaknesses[0].type)} alt="Type" className="type-img" />
+                            <img src={types(card.weaknesses[0].type)} alt="Type" className="type-img" />
                             <p>{card.weaknesses[0].value}</p>
                         </div>
                     </div>
@@ -315,7 +316,7 @@ function EachCard(props) {
                     <div className="resistance-div">
                         <h3 className="other-title">Resistances</h3>
                         <div className="type-value">
-                            <img src={Types(card.resistances[0].type)} alt="Type" className="type-img" />
+                            <img src={types(card.resistances[0].type)} alt="Type" className="type-img" />
                             <p>{card.resistances[0].value}</p>
                         </div>
 
@@ -333,7 +334,7 @@ function EachCard(props) {
                         <h3 className="other-title">Retreat cost</h3>
                         <div className="type-value">
                         {card.retreatCost.map((element, index) =>
-                            <img src={Types(element)} key={index} alt="Type" className="type-img" />
+                            <img src={types(element)} key={index} alt="Type" className="type-img" />
                             )}
                         </div>
 
@@ -363,7 +364,7 @@ function EachCard(props) {
                                         <div className="attack-image-div">
 
                                             {element.cost.map((cost, costIndex) =>
-                                                <img src={Types(cost)} key={costIndex} alt="Type" className="type-img" />
+                                                <img src={types(cost)} key={costIndex} alt="Type" className="type-img" />
                                             )}
                                             <h3>{element.name}</h3>
                                         </div>

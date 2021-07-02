@@ -11,7 +11,7 @@ function SetCards(props) {
     let API = "https://api.pokemontcg.io/v2/cards/?q=set.id:" + setId.id
 
 
-    const serarchCards = () => {
+    const searchCards = () => {
         fetch(API, {
                 method: 'GET',
                 headers: {
@@ -26,7 +26,7 @@ function SetCards(props) {
         
 
     useEffect(() => {
-        serarchCards()
+        searchCards()
     }, [])
     
     console.log(props.match.params)

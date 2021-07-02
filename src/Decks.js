@@ -24,7 +24,7 @@ function Decks() {
     const [modalIsOpen, setIsOpen] = useState(false);
     const [modalText, setModalText] = useState("")
 
-    
+    // Search a deck from the db by id
     let searchDeck = (e) => {
         e.preventDefault()
         let deckId = document.getElementById("deckIdSearch").value;
@@ -42,6 +42,7 @@ function Decks() {
             });
     }
 
+    // Add a new deck to the db
     let addDeck = (e) => {
         e.preventDefault()
         let deckId = document.getElementById("deckIdAdd").value;
@@ -83,10 +84,10 @@ function Decks() {
         }
     }
     
+    // Deletes a card from a specific deck
     let deleteCard = (e,cardIndex) => {
         e.preventDefault()
         let deckId = document.getElementById("deckIdEdit").value;
-        // let deckPass = document.getElementById("deckPass").value;
         const API = "http://localhost:3000";
         let completeDeck
 
@@ -113,6 +114,7 @@ function Decks() {
             })
     }
 
+    // Shows the deck, but it cheks the password, and puts a button to delete a card from the deck.
     let editDeck = (e) => {
         e.preventDefault()
         let deckId = document.getElementById("deckIdEdit").value;
@@ -147,12 +149,7 @@ function Decks() {
                 <>
                 </>
             )
-        }
-
-
-
-        
-        
+        }  
         
     }
     let openModal =() =>{
@@ -160,7 +157,6 @@ function Decks() {
     }
 
     let afterOpenModal=()=> {
-        // references are now sync'd and can be accessed.
     }
 
     let closeModal=()=> {
